@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон мебели SitDownPls</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    @@include('header.html')
+    
+    <h1 class="visually-hidden">Салон мебели SitDownPls</h1>
+    <main>
+        <section class="container catalog">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">Диваны</a>
+                </li>
+                <li class="breadcrumb__active">Прямые диваны</li>
+            </ul>
+            <div class="grid catalog__grid">
+                <h2 class="text catalog__title catalog__title-media">Каталог</h2>
+                <div class="grid__item catalog__grid-filter">
+                    <div class="catalog__filter">
+                        <div class="catalog__check">
+                            <h3 class="text catalog__check-title">Фильтровать по:</h3>
+                            <div class="catalog__checkbox catalog__checkbox-color">
+                                <span class="catalog__checkbox-subtitle">Цвет</span>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Коричневый</span>
+                                </label>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Черный</span>
+                                </label>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Синий</span>
+                                </label>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Белый</span>
+                                </label>
+                            </div>
+                            <div class="catalog__checkbox catalog__checkbox-category">
+                                <span class="catalog__checkbox-subtitle">Категория</span>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Диваны</span>
+                                </label>
+                                <label class="catalog__checkbox-label">
+                                    <input class="catalog__checkbox-input" type="checkbox">
+                                    <span class="catalog__checkbox-option"></span>
+                                    <span class="catalog__checkbox-name">Кресла</span>
+                                </label>
+                            </div>
+                            <div class="catalog__checkbox catalog__price">
+                                <span class="catalog__checkbox-subtitle catalog__price-subtitle">Цена</span>
+                                <div class="catalog__price-choice">
+                                    <label class="catalog__price-label">
+                                        <span class="catalog__price-limit">от</span>
+                                        <input class="catalog__price-filter" min="2000" max="150000"
+                                            type="number" placeholder="2000">
+                                    </label>
+                                    <label class="catalog__price-label">
+                                        <span class="catalog__price-limit">до</span>
+                                        <input class="catalog__price-filter" min="2000" max="150000"
+                                            type="number" placeholder="150 000">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="catalog__banner">
+                        <div class="catalog__banner-img"></div>
+                        <div class="catalog__banner-block top">
+                            <h2 class="text catalog__banner-title">Оксфорд 1950 </h2>
+                            <p class="text catalog__banner-text">Новая коллекция изысканных кресел</p>
+                            <a class="btn top__btn" href="catalog.html">
+                                <span class="top__btn-text">В каталог</span>
+                                <div class="top__btn-arrow">
+                                    <svg class="top__btn-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                        viewBox="0 0 22 22" fill="none">
+                                        <g clip-path="url(#clip0_782_575)">
+                                            <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke="none"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <circle cx="11" cy="11" r="10" stroke="#A65CF0" stroke-width="2" />
+                                        </g>
+                                        <defs>
+                                            <clippath>
+                                                <rect width="22" height="22" fill="white" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item catalog__grid-sofa">
+                    <h2 class="text catalog__title">Каталог</h2>
+                    <div class="swiper catalog__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            5,0
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-r94-320.png">
+                                            <img class="product__img" src="images/sofa_r94.png" alt="Черный диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван кожаный <br>“R-94”</h3>
+                                        <span class="product__price">94 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,9
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-t75-320.png">
+                                            <img class="product__img" src="images/sofa_t75.png"
+                                                alt="Коричневый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван апартековый <br>“T-75”</h3>
+                                        <span class="product__price">69 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,8
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-d31-320.png">
+                                            <img class="product__img" src="images/sofa_d31.png" alt="Синий диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван тканевый <br>“D-31”</h3>
+                                        <span class="product__price">28 490 руб</span>
+                                        <a href="card.html" class="btn product__btn white-btn">Купить</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,8
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-y68-320.png">
+                                            <img class="product__img" src="images/sofa_y68.png" alt="Оранжевый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван велюровый <br>“Y-68”</h3>
+                                        <span class="product__price">22 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,8
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-w95-320.png">
+                                            <img class="product__img" src="images/sofa_w95.png" alt="Жёлтый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван из&nbsp;шинила <br>“W-95”</h3>
+                                        <span class="product__price">22 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,8
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-g41-320.png">
+                                            <img class="product__img" src="images/sofa_g41.png" alt="Бежевый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван флоковый <br>“G-41”</h3>
+                                        <span class="product__price">17 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,8
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-v43-320.png">
+                                            <img class="product__img" src="images/sofa_v43.png" alt="Серый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван шиниловый <br>“V-43”</h3>
+                                        <span class="product__price">19 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,7
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-s99-320.png">
+                                            <img class="product__img" src="images/sofa_s99.png"
+                                                alt="Светло-коричнеый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван велюровый <br>“S-99”</h3>
+                                        <span class="product__price">19 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,7
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-f85-320.png">
+                                            <img class="product__img" src="images/sofa-f85.png" alt="Салатовый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван из кожзама <br>“F-85”</h3>
+                                        <span class="product__price">26 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,6
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-h64-320.png">
+                                            <img class="product__img" src="images/sofa-h64.png" alt="Серый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван флоковый <br>“H-64”</h3>
+                                        <span class="product__price">25 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,6
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-h58-320.png">
+                                            <img class="product__img" src="images/sofa-h58.png"
+                                                alt="Синий диван на ножках">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван флоковый <br>“H-58”</h3>
+                                        <span class="product__price">23 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,6
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-r43-320.png">
+                                            <img class="product__img" src="images/sofa-r43.png"
+                                                alt="Коричневый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван из кожзама <br>“R-43”</h3>
+                                        <span class="product__price">33 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,6
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-c42-320.png">
+                                            <img class="product__img" src="images/sofa-c42.png"
+                                                alt="Светло-серый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван из шинила <br>“С-42”</h3>
+                                        <span class="product__price">18 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,6
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-u58-320.png">
+                                            <img class="product__img" src="images/sofa-u58.png" alt="Оранжевый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван велюровый <br>“U-58”</h3>
+                                        <span class="product__price">21 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,5
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-f41-320.png">
+                                            <img class="product__img" src="images/sofa-f41.png"
+                                                alt="Серый диван с синими подушками">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван флоковый <br>“F-41”</h3>
+                                        <span class="product__price">17 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,5
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-r85-320.png">
+                                            <img class="product__img" src="images/sofa-r85.png"
+                                                alt="Тёмно-синий диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван велюровый <br>“R-85”</h3>
+                                        <span class="product__price">34 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,5
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-s44-320.png">
+                                            <img class="product__img" src="images/sofa-s44.png"
+                                                alt="Тёмно-синий диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван велюровый <br>“S-44”</h3>
+                                        <span class="product__price">19 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <span class="product__stars">
+                                        <img src="images/star.png" alt="Звезда">
+                                        <span class="product__stars-grade">
+                                            4,4
+                                        </span>
+                                    </span>
+                                    <div class="product__sofa">
+                                        <picture>
+                                            <source media="(max-width: 556px)" srcset="images/sofa-c80-320.png">
+                                            <img class="product__img" src="images/sofa-c80.png" alt="Жёлтый диван">
+                                        </picture>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="text product__subtitle">Диван из кожзама <br>“C-80”</h3>
+                                        <span class="product__price">20 990 руб</span>
+                                        <button class="btn product__btn white-btn">Купить</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="catalog__swiper-btn">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="pagesScripts/catalog.js"></script>
+</body>
+
+</html>
